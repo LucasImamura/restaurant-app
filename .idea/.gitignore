@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# IDE
+compiler.xml
+encodings.xml
+jarRepositories.xml
+misc.xml
+modules.xml
+restaurant-app.iml
+
+# Build
