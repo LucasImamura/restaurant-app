@@ -35,9 +35,9 @@ public class IngredientController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Ingredient> updateIngredient(@PathVariable Integer id)
+    public ResponseEntity<Ingredient> updateIngredient(@RequestBody Ingredient ingredient)
     {
-        return ResponseEntity.ok().body(ingredientService.updateIngredient(id));
+        return ResponseEntity.ok().body(ingredientService.updateIngredient(ingredient));
     }
 
     @DeleteMapping("/{id}")

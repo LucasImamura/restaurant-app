@@ -40,15 +40,19 @@ public class IngredientService {
         return savedIngredient;
     }
 
-    public Ingredient updateIngredient(Integer id) {
-        Ingredient existingIngredient = ingredientRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("Ingredient not found with id: " + id));
+    public Ingredient updateIngredient(Ingredient ingredient) {
+        Optional<Ingredient> existingIngredient = ingredientRepository.findById(ingredient.getId());
+        if(existingIngredient.isEmpty()) {
+            log.info("Update failed because the ingredient does not exist");
+            return null;
+        }
 
-        existingIngredient.setCreatedAt(existingIngredient.getCreatedAt());
-        existingIngredient.setUpdatedAt(LocalDateTime.now());
+        ingredient.setCreatedAt(existingIngredient.get().getCreatedAt());
+        ingredient.setUpdatedAt(LocalDateTime.now());
 
-        Ingredient updatedIngredient = ingredientRepository.save(existingIngredient);
-        log.info("Ingredient with id: {} updated successfully", id);
+        Ingredient updatedIngredient = ingredientRepository.save(ingredient);
+
+        log.info("Ingredient with id: {} updated successfully", ingredient.getId());
         return updatedIngredient;
     }
 
