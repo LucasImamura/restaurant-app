@@ -1,6 +1,7 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+backend/src/main/resources/application.properties
 
 # IDE
 compiler.xml
