@@ -1,8 +1,20 @@
 <main>
-  <header class="brand-name">
-    <img class="brand-logo" src="/assets/burger-overflow.png" alt="logo" aria-hidden="true">
-  </header>
-  <section class="content">
-    <app-home></app-home>
-  </section>
+  <mat-toolbar color="#000000">
+    <img src="assets/burger-overflow-logo.png" alt="Logo" class="logo" />
+    <span class="app-title">Burger Overflow</span>
+    <span class="spacer"></span>
+    <button mat-button routerLink="/create-item">
+      <mat-icon>add</mat-icon>
+      Register new item
+    </button>
+    <button mat-button routerLink="/create-burger">
+      <mat-icon>lunch_dining</mat-icon>
+      Register new burger
+    </button>
+    <button mat-button routerLink="/create-order">
+      <mat-icon>shopping_cart</mat-icon>
+      Make an order
+    </button>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
 </main>

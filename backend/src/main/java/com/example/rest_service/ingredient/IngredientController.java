@@ -34,7 +34,7 @@ public class IngredientController {
         return ResponseEntity.ok().body(ingredientService.saveIngredient(ingredient));
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/")
     public ResponseEntity<Ingredient> updateIngredient(@RequestBody Ingredient ingredient)
     {
         return ResponseEntity.ok().body(ingredientService.updateIngredient(ingredient));
