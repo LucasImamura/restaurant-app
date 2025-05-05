@@ -1,4 +1,4 @@
-package com.example.rest_service.ingredient;
+package com.example.rest_service.beverage;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -12,8 +12,8 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Data
 @Entity
-@Table(name = "ingredient")
-public class Ingredient {
+@Table(name = "beverage")
+public class Beverage {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,7 +22,7 @@ public class Ingredient {
     private String code;
     private String description;
     private BigDecimal unitPrice;
-    private Boolean canBeExtra;
+    private Boolean hasSugar;
     private String imageUrl;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
