@@ -5,8 +5,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 
 import { ItemComponent } from '../item/item.component'
-import { Item } from '../item'
-import { ItemsService } from '../items.service'
+import { Item } from '../interfaces/item'
+import { ItemsService } from '../services/items.service'
 
 @Component({
   selector: 'app-home',

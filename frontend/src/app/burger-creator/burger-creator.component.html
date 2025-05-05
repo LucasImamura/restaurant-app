@@ -1,0 +1,30 @@
+<div class="burger-creator">
+  <h2>Criar Hambúrguer</h2>
+  <label for="burgerName">Nome do Hambúrguer:</label>
+  <input id="burgerName" [(ngModel)]="burgerName" placeholder="Digite o nome do hambúrguer" />
+
+  <h3>Ingredientes Disponíveis</h3>
+  <ul>
+    <li *ngFor="let item of items">
+      {{ item.description }} ({{ item.unitPrice }})
+      <button (click)="addItemToBurger(item)">Adicionar</button>
+    </li>
+  </ul>
+
+  <h3>Ingredientes Selecionados</h3>
+  <ul>
+    <li *ngFor="let item of selectedItems">
+      {{ item.description }} ({{ item.unitPrice }})
+      <button (click)="removeItemFromBurger(item)">Remover</button>
+    </li>
+  </ul>
+
+  <button (click)="saveBurger()">Salvar Hambúrguer</button>
+
+  <h3>Hambúrgueres Registrados</h3>
+  <ul>
+    <li *ngFor="let burger of burgers">
+      {{ burger.description }} - Preço: {{ burger.unitPrice }}
+    </li>
+  </ul>
+</div>
