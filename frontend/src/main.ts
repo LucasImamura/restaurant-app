@@ -4,11 +4,5 @@ import routeConfig from './app/routes';
 import { provideRouter } from '@angular/router';
 import { AppComponent } from './app/app.component';
 
-bootstrapApplication(AppComponent,
-  {
-    providers: [
-      provideProtractorTestingSupport(),
-      provideRouter(routeConfig)
-    ]
-  }
-).catch(err => console.error(err));
+bootstrapApplication(AppComponent, appConfig)
+  .catch(err => console.error(err));
