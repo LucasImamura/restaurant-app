@@ -46,7 +46,7 @@ export class OrderCreatorComponent implements OnInit {
         this.orders = orders;
       },
       error: (error) => {
-        console.error('Erro ao carregar os pedidos:', error);
+        console.error('Error loading orders:', error);
       }
     });
   }
@@ -57,7 +57,7 @@ export class OrderCreatorComponent implements OnInit {
         this.burgers = burgers;
       },
       error: (error) => {
-        console.error('Erro ao carregar os hambúrgueres:', error);
+        console.error('Error loading burgers:', error);
       }
     });
   }
@@ -68,7 +68,7 @@ export class OrderCreatorComponent implements OnInit {
         this.beverages = beverages;
       },
       error: (error) => {
-        console.error('Erro ao carregar as bebidas:', error);
+        console.error('Error loading beverages:', error);
       }
     });
   }
@@ -77,7 +77,7 @@ export class OrderCreatorComponent implements OnInit {
     if (!this.selectedBurgers.some(selected => selected.id === burger.id)) {
       this.selectedBurgers.push(burger);
     } else {
-      alert('Este hambúrguer já foi adicionado ao pedido.');
+      alert('This burger has already been added to this order.');
     }
   }
 
@@ -85,7 +85,7 @@ export class OrderCreatorComponent implements OnInit {
     if (!this.selectedBeverages.some(selected => selected.id === beverage.id)) {
       this.selectedBeverages.push(beverage);
     } else {
-      alert('Esta bebida já foi adicionada ao pedido.');
+      alert('This beverage has already been added to this order.');
     }
   }
 
@@ -124,15 +124,15 @@ export class OrderCreatorComponent implements OnInit {
 
       this.ordersService.saveOrder(newOrder).subscribe({
         next: () => {
-          alert('Pedido salvo com sucesso!');
+          alert('Order saved successfully!');
           this.resetForm();
         },
         error: (error) => {
-          console.error('Erro ao salvar o pedido:', error);
+          console.error('Error saving order:', error);
         }
       });
     } else {
-      alert('Por favor, preencha todas as informações do cliente.');
+      alert('Please, fill the customer's info fields.');
     }
   }
 

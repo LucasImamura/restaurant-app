@@ -35,7 +35,7 @@ export class BurgerCreatorComponent {
         this.items = ingredients;
       },
       error: (error) => {
-        console.error('Erro ao carregar os ingredientes:', error);
+        console.error('Error loading ingredients:', error);
       }
     });
   }
@@ -46,7 +46,7 @@ export class BurgerCreatorComponent {
         this.burgers = burgers;
       },
       error: (error: HttpErrorResponse) => {
-        console.error('Erro ao carregar os hambúrgueres:', error);
+        console.error('Error loading burgers:', error);
       }
     });
   }
@@ -55,7 +55,7 @@ export class BurgerCreatorComponent {
     if (!this.selectedItems.some(selectedItem => selectedItem.id === item.id)) {
       this.selectedItems.push(item);
     } else {
-      alert('Este item já foi adicionado ao hambúrguer.');
+      alert('This item has already been added to this burger.');
     }
   }
 
@@ -77,16 +77,16 @@ export class BurgerCreatorComponent {
 
       this.burgersService.createBurger(newBurger as Burger).subscribe({
         next: (burger) => {
-          console.log('Hambúrguer criado com sucesso:', burger);
+          console.log('Burger successfully created:', burger);
           this.resetForm();
           this.loadBurgers();
         },
         error: (error) => {
-          console.error('Erro ao criar o hambúrguer:', error);
+          console.error('Error creating burger:', error);
         }
       });
     } else {
-      alert('Por favor, insira um nome e selecione ao menos um ingrediente.');
+      alert('Please, inform a name and add at least one ingredient.');
     }
   }
 
