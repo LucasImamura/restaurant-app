@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b2d98ae2-0170-4dbc-a95e-221be9072f86" name="Changes" comment="Fix main UI Issues">
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/burger-creator/burger-creator.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/burger-creator/burger-creator.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/order-creator/order-creator.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/order-creator/order-creator.component.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LucasImamura&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/LucasImamura/restaurant-app&quot;,
+    &quot;accountId&quot;: &quot;248ccdab-61a4-476d-80ff-a0b943dee1ee&quot;
+  }
+}</component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2wSgE4qhCoMbPJOmYoYIqWtt9Lm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Application.RestServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.rest-service [org.flywaydb:flyway-maven-plugin:6.5.7:migrate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/lucasimamura/Projetos/restaurant-app/frontend/src/assets&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/assets" />
+      <recent name="$PROJECT_DIR$/frontend/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/app/interfaces" />
+      <recent name="$PROJECT_DIR$/frontend/src/app/services" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="RestServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.rest_service.RestServiceApplication" />
+      <module name="rest-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.rest_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RestServiceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b2d98ae2-0170-4dbc-a95e-221be9072f86" name="Changes" comment="" />
+      <created>1746040274147</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746040274147</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initialize Spring">
+      <option name="closed" value="true" />
+      <created>1746042410457</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746042410457</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Create ingredient's layers (Entity, Repository, Service and Controller)">
+      <option name="closed" value="true" />
+      <created>1746151661223</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746151661223</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fix git ignore">
+      <option name="closed" value="true" />
+      <created>1746161824301</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746161824301</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Create AngularJS initial structure">
+      <option name="closed" value="true" />
+      <created>1746297179488</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1746297179488</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add mock data to test prop binding, interpolation and ngFor">
+      <option name="closed" value="true" />
+      <created>1746337262352</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746337262352</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Create home page">
+      <option name="closed" value="true" />
+      <created>1746424205709</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1746424205709</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fix circular imports">
+      <option name="closed" value="true" />
+      <created>1746429652308</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1746429652308</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fix ingredient table and add CORS permission">
+      <option name="closed" value="true" />
+      <created>1746432876890</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1746432876890</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Fix typo">
+      <option name="closed" value="true" />
+      <created>1746432961323</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1746432961323</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add beverage model">
+      <option name="closed" value="true" />
+      <created>1746435748003</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1746435748003</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add hamburger logic">
+      <option name="closed" value="true" />
+      <created>1746470830330</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1746470830330</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add order logic">
+      <option name="closed" value="true" />
+      <created>1746482529343</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1746482529343</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Fix main UI Issues">
+      <option name="closed" value="true" />
+      <created>1746492096212</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1746492096212</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.ts" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initialize Spring" />
+    <MESSAGE value="Create ingredient's layers (Entity, Repository, Service and Controller)" />
+    <MESSAGE value="Fix git ignore" />
+    <MESSAGE value="Create first migration, add flyway plugin for maven and fix ingredient put request" />
+    <MESSAGE value="Create AngularJS initial structure" />
+    <MESSAGE value="Add mock data to test prop binding, interpolation and ngFor" />
+    <MESSAGE value="Create home page" />
+    <MESSAGE value="Fix circular imports" />
+    <MESSAGE value="Fix ingredient table and add CORS permission" />
+    <MESSAGE value="Fix typo" />
+    <MESSAGE value="Add beverage model" />
+    <MESSAGE value="Add hamburger logic" />
+    <MESSAGE value="Add order logic" />
+    <MESSAGE value="Fix main UI Issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix main UI Issues" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
