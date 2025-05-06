@@ -46,6 +46,24 @@ spring.datasource.password=your_password
 ```
 Don't forget to check if your database is indeed at port 5433.
 
+Now, please apply the database migrations located at /backend/src/main/resources/db/migration. There are seven of them.
+I personally used flyway through a maven plugin, which can be simply obtained by adding this to the pom.xml:
+```
+<plugin>
+  <groupId>org.flywaydb</groupId>
+  <artifactId>flyway-maven-plugin</artifactId>
+  <version>6.5.7</version>
+  <configuration>
+    <url>jdbc:postgresql://localhost:5433/restaurant-app</url>
+    <user>your_username_goes_here</user>
+    <password>your_password_goes_here</password>
+  </configuration>
+</plugin>
+```
+This should ensure that your maven plugin at IntelliJ works with Flyway. All you have to do is double-click "flyway:migrate":
+![image](https://github.com/user-attachments/assets/5dde6227-4856-4cb3-af10-ebf830c00f7b)
+
+
 Next, build and run the backend:
 
 ```
