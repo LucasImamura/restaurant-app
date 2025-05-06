@@ -132,7 +132,7 @@ export class OrderCreatorComponent implements OnInit {
         }
       });
     } else {
-      alert('Please, fill the customer's info fields.');
+      alert('Please, fill the customers info fields.');
     }
   }
 
