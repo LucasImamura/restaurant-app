@@ -1,62 +1,73 @@
-<div class="order-creator">
-  <h2>Criar Pedido</h2>
+<div class="order-creator-container">
+  <div class="order-list">
+    <h2>Pedidos Feitos</h2>
+    <ul>
+      <li *ngFor="let order of orders">
+        <strong>{{ order.code }}</strong> - {{ order.description }}
+      </li>
+    </ul>
+  </div>
 
-  <fieldset>
-    <legend>Informações do Cliente</legend>
-    <label for="clientName">Nome:</label>
-    <input id="clientName" [(ngModel)]="clientName" placeholder="Digite o nome do cliente" />
+  <div class="order-creator">
+    <h2>Criar Pedido</h2>
 
-    <label for="clientAddress">Endereço:</label>
-    <input id="clientAddress" [(ngModel)]="clientAddress" placeholder="Digite o endereço do cliente" />
+    <fieldset>
+      <legend>Informações do Cliente</legend>
+      <label for="clientName">Nome:</label>
+      <input id="clientName" [(ngModel)]="clientName" placeholder="Digite o nome do cliente" />
 
-    <label for="clientTelephone">Telefone:</label>
-    <input id="clientTelephone" [(ngModel)]="clientTelephone" placeholder="Digite o telefone do cliente" />
-  </fieldset>
+      <label for="clientAddress">Endereço:</label>
+      <input id="clientAddress" [(ngModel)]="clientAddress" placeholder="Digite o endereço do cliente" />
 
-  <fieldset>
-    <legend>Informações do Pedido</legend>
-    <label for="orderCode">Código:</label>
-    <input id="orderCode" [(ngModel)]="code" placeholder="Digite o código do pedido" />
+      <label for="clientTelephone">Telefone:</label>
+      <input id="clientTelephone" [(ngModel)]="clientTelephone" placeholder="Digite o telefone do cliente" />
+    </fieldset>
 
-    <label for="orderDescription">Descrição:</label>
-    <input id="orderDescription" [(ngModel)]="description" placeholder="Digite a descrição do pedido" />
-  </fieldset>
+    <fieldset>
+      <legend>Informações do Pedido</legend>
+      <label for="orderCode">Código:</label>
+      <input id="orderCode" [(ngModel)]="code" placeholder="Digite o código do pedido" />
 
-  <h3>Hambúrgueres Disponíveis</h3>
-  <ul>
-    <li *ngFor="let burger of burgers">
-      {{ burger.description }} ({{ burger.unitPrice }})
-      <button (click)="addBurgerToOrder(burger)">Adicionar</button>
-    </li>
-  </ul>
+      <label for="orderDescription">Descrição:</label>
+      <input id="orderDescription" [(ngModel)]="description" placeholder="Digite a descrição do pedido" />
+    </fieldset>
 
-  <h3>Bebidas Disponíveis</h3>
-  <ul>
-    <li *ngFor="let beverage of beverages">
-      {{ beverage.description }} ({{ beverage.unitPrice }})
-      <button (click)="addBeverageToOrder(beverage)">Adicionar</button>
-    </li>
-  </ul>
+    <h3>Hambúrgueres Disponíveis</h3>
+    <ul>
+      <li *ngFor="let burger of burgers">
+        {{ burger.description }} (${{ burger.unitPrice }})
+        <button (click)="addBurgerToOrder(burger)">Adicionar</button>
+      </li>
+    </ul>
 
-  <h3>Itens Selecionados</h3>
-  <h4>Hambúrgueres</h4>
-  <ul>
-    <li *ngFor="let burger of selectedBurgers">
-      {{ burger.description }} ({{ burger.unitPrice }})
-      <button (click)="removeBurgerFromOrder(burger)">Remover</button>
-    </li>
-  </ul>
+    <h3>Bebidas Disponíveis</h3>
+    <ul>
+      <li *ngFor="let beverage of beverages">
+        {{ beverage.description }} (${{ beverage.unitPrice }})
+        <button (click)="addBeverageToOrder(beverage)">Adicionar</button>
+      </li>
+    </ul>
 
-  <h4>Bebidas</h4>
-  <ul>
-    <li *ngFor="let beverage of selectedBeverages">
-      {{ beverage.description }} ({{ beverage.unitPrice }})
-      <button (click)="removeBeverageFromOrder(beverage)">Remover</button>
-    </li>
-  </ul>
+    <h2>Resumo do pedido:</h2>
+    <h4>Hambúrgueres</h4>
+    <ul>
+      <li *ngFor="let burger of selectedBurgers">
+        {{ burger.description }} (${{ burger.unitPrice }})
+        <button (click)="removeBurgerFromOrder(burger)">Remover</button>
+      </li>
+    </ul>
 
-  <label for="observations">Observações:</label>
-  <textarea id="observations" [(ngModel)]="observations" placeholder="Digite observações para o pedido"></textarea>
+    <h4>Bebidas</h4>
+    <ul>
+      <li *ngFor="let beverage of selectedBeverages">
+        {{ beverage.description }} (${{ beverage.unitPrice }})
+        <button (click)="removeBeverageFromOrder(beverage)">Remover</button>
+      </li>
+    </ul>
 
-  <button (click)="saveOrder()">Salvar Pedido</button>
+    <label for="observations">Observações:</label>
+    <textarea id="observations" [(ngModel)]="observations" placeholder="Digite observações para o pedido"></textarea>
+
+    <button (click)="saveOrder()">Salvar Pedido</button>
+</div>
 </div>
