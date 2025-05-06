@@ -38,6 +38,8 @@ Create a new file to store the database connection details. The file should be n
 It should look like this:
 
 ```
+spring.application.name=rest-service
+
 spring.datasource.url=jdbc:postgresql://localhost:5433/restaurant-db
 spring.datasource.username=your_username
 spring.datasource.password=your_password
