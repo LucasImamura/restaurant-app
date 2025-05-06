@@ -3,7 +3,8 @@
     <h2>Order list</h2>
     <ul>
       <li *ngFor="let order of orders">
-        <strong>{{ order.code }}</strong> - {{ order.description }}
+        <strong>{{ order.code }}</strong> - {{ order.description }} -
+        <span>Total: ${{ getOrderTotalPrice(order) }}</span>
       </li>
     </ul>
   </div>

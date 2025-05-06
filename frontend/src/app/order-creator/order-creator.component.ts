@@ -97,6 +97,18 @@ export class OrderCreatorComponent implements OnInit {
     this.selectedBeverages = this.selectedBeverages.filter(selected => selected.id !== beverage.id);
   }
 
+  getOrderTotalPrice(order: Order): number {
+    const burgersTotal = Array.isArray(order.burgers)
+      ? order.burgers.reduce((sum, burger) => sum + burger.unitPrice, 0)
+      : 0;
+
+    const beveragesTotal = Array.isArray(order.beverages)
+      ? order.beverages.reduce((sum, beverage) => sum + beverage.unitPrice, 0)
+      : 0;
+
+    return parseFloat((burgersTotal + beveragesTotal).toFixed(2));
+  }
+
   saveOrder(): void {
     if (this.clientName && this.clientAddress && this.clientTelephone) {
       const newOrder: Partial<Order> = {
